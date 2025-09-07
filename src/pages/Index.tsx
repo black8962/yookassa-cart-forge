@@ -19,9 +19,7 @@ import {
   Shield, 
   Truck, 
   Users,
-  Info
 } from "lucide-react";
-import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 import productsShowcase from "@/assets/products-showcase.jpg";
 
@@ -144,19 +142,12 @@ const Index = () => {
             <div className="flex items-center gap-4">
               <ShoppingBag className="h-8 w-8" />
               <div>
-                <h1 className="text-2xl font-bold">YooKassa Store</h1>
-                <p className="text-sm text-white/80">Современный интернет-магазин</p>
+                <h1 className="text-2xl font-bold">frostmarket</h1>
+                <p className="text-sm text-white/80">Цифровые товары и услуги</p>
               </div>
             </div>
             
             <div className="flex items-center gap-4">
-              <Link to="/yookassa-info">
-                <Button variant="ghost" className="text-white hover:bg-white/10">
-                  <Info className="mr-2 h-4 w-4" />
-                  Интеграция YooKassa
-                </Button>
-              </Link>
-              
               {currentView !== 'cart' && (
                 <Button 
                   variant="secondary"
@@ -191,10 +182,10 @@ const Index = () => {
             <div className="relative container mx-auto px-4 py-24">
               <div className="max-w-3xl">
                 <h2 className="text-5xl font-bold mb-6 animate-fade-in">
-                  Современная электронная коммерция
+                  Цифровые товары и услуги
                 </h2>
                 <p className="text-xl text-white/90 mb-8 animate-slide-up">
-                  Интегрированное решение с YooKassa для приема платежей. 
+                  Читы, курсовые работы, VPN-сервисы. 
                   Быстро, безопасно, удобно.
                 </p>
                 <div className="flex items-center gap-6 animate-slide-up">
@@ -203,12 +194,12 @@ const Index = () => {
                     <span>Безопасные платежи</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Truck className="h-5 w-5" />
-                    <span>Быстрая доставка</span>
-                  </div>
-                  <div className="flex items-center gap-2">
                     <Star className="h-5 w-5" />
                     <span>Качественный сервис</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="h-5 w-5" />
+                    <span>Поддержка 24/7</span>
                   </div>
                 </div>
               </div>
@@ -281,12 +272,12 @@ const Index = () => {
 
                 <Card className="text-center shadow-card bg-gradient-card">
                   <CardHeader>
-                    <Truck className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <CardTitle>Быстрая доставка</CardTitle>
+                    <Star className="h-12 w-12 text-primary mx-auto mb-4" />
+                    <CardTitle>Мгновенная доставка</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      Доставляем заказы в кратчайшие сроки по всей территории России
+                      Все цифровые товары доставляются мгновенно после оплаты
                     </p>
                   </CardContent>
                 </Card>
@@ -352,28 +343,27 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <ShoppingBag className="h-6 w-6" />
-                <span className="text-xl font-bold">YooKassa Store</span>
+                <span className="text-xl font-bold">frostmarket</span>
               </div>
               <p className="text-white/80">
-                Современный интернет-магазин с интеграцией YooKassa
+                Цифровые товары и услуги
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Информация</h4>
+              <h4 className="font-semibold mb-4">Категории</h4>
               <ul className="space-y-2 text-white/80">
-                <li><Link to="/yookassa-info" className="hover:text-white">О YooKassa</Link></li>
-                <li><a href="#" className="hover:text-white">Доставка</a></li>
-                <li><a href="#" className="hover:text-white">Возврат</a></li>
+                <li><a href="#" className="hover:text-white">Читы</a></li>
+                <li><a href="#" className="hover:text-white">Курсовые</a></li>
+                <li><a href="#" className="hover:text-white">VPN-сервис</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Поддержка</h4>
+              <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-white/80">
-                <li><a href="#" className="hover:text-white">Контакты</a></li>
-                <li><a href="#" className="hover:text-white">FAQ</a></li>
-                <li><a href="#" className="hover:text-white">Помощь</a></li>
+                <li><a href="https://t.me/frostmarket" className="hover:text-white">Канал: @frostmarket</a></li>
+                <li><a href="https://t.me/frostmarket_meneg" className="hover:text-white">Поддержка: @frostmarket_meneg</a></li>
               </ul>
             </div>
 
@@ -390,7 +380,7 @@ const Index = () => {
           <Separator className="my-8 bg-white/20" />
           
           <div className="text-center text-white/60">
-            <p>&copy; 2025 YooKassa Store. Все права защищены.</p>
+            <p>&copy; 2025 frostmarket. Все права защищены.</p>
           </div>
         </div>
       </footer>
